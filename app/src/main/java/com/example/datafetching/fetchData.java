@@ -61,7 +61,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
                 try {
                     JSONObject jsonObject1 = new JSONObject(document.body().text());
                     DeviceSerialNumber = jsonObject1.getString("SerialNum");
-                    Log.d(TAG, "In parseForCommanResponseData : SerialNum" + DeviceSerialNumber);
+                        Log.d(TAG, "In parseForCommanResponseData : SerialNum" + DeviceSerialNumber);
                 } catch (JSONException e) {
                     e.printStackTrace();
                 }
@@ -103,7 +103,7 @@ public class fetchData extends AsyncTask<Void, Void, Void> {
     //UI theard
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        //if (statusCode == HttpURLConnection.HTTP_OK){//if (dataParsed != "null") {
+        //if (statusCode ==HttpURLConnection.HTTP_OK){//if (dataParsed != "null") {
         // MainActivity.data.setText(this.DeviceSerialNumber);
         // for(int i=0;i<=5;i++)
         if (flag) {
