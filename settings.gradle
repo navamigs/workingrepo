@@ -1,1 +1,0 @@
-include ':app', ':jsoup-1.6.0', ':jsoup-1.12.1'
